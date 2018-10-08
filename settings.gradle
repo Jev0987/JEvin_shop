@@ -1,0 +1,8 @@
+rootProject.name = 'JEvin-shop'
+include 'JEvin-pojo'
+include 'JEvin-common'
+include 'JEvin-mapper'
+include 'JEvin-service'
+include 'JEvin-manager'
+include 'JEvin-interface'
+

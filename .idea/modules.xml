@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common.iml" group="JEvin-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_main.iml" group="JEvin-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_test.iml" group="JEvin-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-interface.iml" group="JEvin-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_main.iml" group="JEvin-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_test.iml" group="JEvin-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-manager.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-manager.iml" group="JEvin-manager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_main.iml" group="JEvin-manager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_test.iml" group="JEvin-manager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-mapper.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-mapper.iml" group="JEvin-mapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-mapper/JEvin-mapper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-mapper/JEvin-mapper_main.iml" group="JEvin-mapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-mapper/JEvin-mapper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-mapper/JEvin-mapper_test.iml" group="JEvin-mapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-pojo.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-pojo.iml" group="JEvin-pojo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_main.iml" group="JEvin-pojo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_test.iml" group="JEvin-pojo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service.iml" group="JEvin-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_main.iml" group="JEvin-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_test.iml" group="JEvin-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-shop.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-shop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-shop_main.iml" group="JEvin-shop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-shop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-shop_test.iml" group="JEvin-shop" />
+    </modules>
+  </component>
+</project>
