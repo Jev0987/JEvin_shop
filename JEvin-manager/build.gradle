@@ -26,4 +26,8 @@ dependencies {
 
     //dubbo 消息中间件
     compile group: 'io.dubbo.springboot',name: 'spring-boot-starter-dubbo',version:'1.0.0'
+    
+    compile project(':JEvin-service')
+    compile project(':JEvin-interface')
+    compile project(':JEvin-mapper')
 }

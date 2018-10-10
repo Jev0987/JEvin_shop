@@ -11,4 +11,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    //添加 pojo 依赖 ，因为接口里面的方法参数、返回值都有可能是个对象类
+    compile project(':JEvin-pojo')
 }
