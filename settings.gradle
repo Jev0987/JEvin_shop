@@ -5,4 +5,5 @@ include 'JEvin-mapper'
 include 'JEvin-service'
 include 'JEvin-manager'
 include 'JEvin-interface'
+include 'JEvin-portal'
 

@@ -1,5 +1,6 @@
 package com.JEvin.service;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  @描述：    TODO
  */
 @SpringBootApplication
+@MapperScan("com.JEvin.mapper")
 public class ServiceApp {
     public static void main(String [] args){
         SpringApplication.run(ServiceApp.class,args);

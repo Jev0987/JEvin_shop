@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/JEvin-manager" />
             <option value="$PROJECT_DIR$/JEvin-mapper" />
             <option value="$PROJECT_DIR$/JEvin-pojo" />
+            <option value="$PROJECT_DIR$/JEvin-portal" />
             <option value="$PROJECT_DIR$/JEvin-service" />
           </set>
         </option>

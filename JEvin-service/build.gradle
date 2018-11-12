@@ -26,8 +26,10 @@ dependencies {
     //dubbo 消息中间件
     compile group: 'io.dubbo.springboot',name: 'spring-boot-starter-dubbo',version:'1.0.0'
 
+    //这是service的实现，它需要依赖interface，因为里面定义了service的接口
     compile project(':JEvin-interface')
 
     //service 需要 mapper 的方法, 这里需要调用mapper依赖
     compile project(':JEvin-mapper')
+
 }

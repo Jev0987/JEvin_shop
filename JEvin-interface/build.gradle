@@ -14,4 +14,7 @@ dependencies {
 
     //添加 pojo 依赖 ，因为接口里面的方法参数、返回值都有可能是个对象类
     compile project(':JEvin-pojo')
+
+    //分页插件
+    compile group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.2.3'
 }

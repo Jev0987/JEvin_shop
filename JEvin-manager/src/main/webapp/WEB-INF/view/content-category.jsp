@@ -39,7 +39,7 @@ $(function(){
         			   url: "/rest/content/category/update",
         			   data: {id:node.id,name:node.text},
         			   success: function(msg){
-        				   //$.messager.alert('提示','新增商品成功!');
+        				   $.messager.alert('提示','重命名成功!');
         			   },
         			   error: function(){
         				   $.messager.alert('提示','重命名失败!');
@@ -73,7 +73,7 @@ function menuHandler(item){
      			   url: "/rest/content/category/delete",
      			   data : {parentId:node.parentId,id:node.id},
      			   success: function(msg){
-     				   //$.messager.alert('提示','新增商品成功!');
+     				   $.messager.alert('提示','删除成功!');
      				  tree.tree("remove",node.target);
      			   },
      			   error: function(){

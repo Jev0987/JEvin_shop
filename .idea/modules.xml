@@ -17,6 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-pojo.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-pojo.iml" group="JEvin-pojo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_main.iml" group="JEvin-pojo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-pojo/JEvin-pojo_test.iml" group="JEvin-pojo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-portal.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-portal.iml" group="JEvin-portal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_main.iml" group="JEvin-portal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_test.iml" group="JEvin-portal" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service.iml" group="JEvin-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_main.iml" group="JEvin-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_test.iml" group="JEvin-service" />

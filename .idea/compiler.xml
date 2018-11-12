@@ -22,6 +22,8 @@
       <module name="JEvin-mapper_test" target="1.8" />
       <module name="JEvin-pojo_main" target="1.8" />
       <module name="JEvin-pojo_test" target="1.8" />
+      <module name="JEvin-portal_main" target="1.8" />
+      <module name="JEvin-portal_test" target="1.8" />
       <module name="JEvin-service_main" target="1.8" />
       <module name="JEvin-service_test" target="1.8" />
       <module name="JEvin-shop_main" target="1.8" />

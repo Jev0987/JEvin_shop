@@ -12,11 +12,11 @@
 
 package com.JEvin.pojo;
 
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * 商品类目(TB_ITEM_CAT)
@@ -53,7 +53,7 @@ public class ItemCat implements java.io.Serializable {
 
     /** 该类目是否为父类目，1为true，0为false */
     @Column(name = "IS_PARENT", nullable = true)
-    private Byte[] isParent;
+    private Boolean isParent;
 
     /** 创建时间 */
     @Column(name = "CREATED", nullable = true)
@@ -84,7 +84,7 @@ public class ItemCat implements java.io.Serializable {
 
     /**
      * 获取父类目ID=0时，代表的是一级的类目
-     * 
+     *
      * @return 父类目ID=0时
      */
     public Long getParentId() {
@@ -93,7 +93,7 @@ public class ItemCat implements java.io.Serializable {
 
     /**
      * 设置父类目ID=0时，代表的是一级的类目
-     * 
+     *
      * @param parentId
      *          父类目ID=0时
      */
@@ -163,7 +163,7 @@ public class ItemCat implements java.io.Serializable {
      * 
      * @return 该类目是否为父类目
      */
-    public Byte[] getIsParent() {
+    public Boolean getIsParent() {
         return this.isParent;
     }
 
@@ -173,7 +173,7 @@ public class ItemCat implements java.io.Serializable {
      * @param isParent
      *          该类目是否为父类目
      */
-    public void setIsParent(Byte[] isParent) {
+    public void setIsParent(Boolean isParent) {
         this.isParent = isParent;
     }
 
@@ -213,5 +213,18 @@ public class ItemCat implements java.io.Serializable {
      */
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+
+    public String getText(){
+
+        return  name;
+
+    }
+
+    public String getState(){
+
+        return  isParent?"closed":"open";
+
     }
 }
