@@ -6,10 +6,13 @@ import com.JEvin.service.ContentService;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.util.StringUtils;
 
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /*
  *  @项目名：  JEvin-shop 
@@ -25,7 +28,7 @@ public class ContentServiceImpl implements ContentService{
     @Autowired
     private ContentMapper contentMapper;
 
-    //private RedisTemplate<String , String>redisTemplate;
+    private RedisTemplate<String , String> redisTemplate;
 
     @Override
     public int add(Content content) {
@@ -106,11 +109,39 @@ public class ContentServiceImpl implements ContentService{
            System.out.println("redis里面有数据，直接返回了");
            return json;
        }
-       Content content = new Content();
-        content.setCategoryId(categoryId);
+           Content c = new Content();
+            c.setCategoryId(categoryId);
+            //从mysql数据查询出来的集合
+           List<Content> list = contentMapper.select(c);
 
-        return contentMapper.select(content);
 
+           List<Map<String  , String >> mapList = new ArrayList<>();
+           //System.out.println("list=" + list);
+           for (Content content : list) {
 
-    }
+               Map<String  , String > map = new HashMap<String ,String>();
+               map.put("width","670");
+               map.put("height","240");
+               map.put("href",content.getUrl());
+               map.put("src",content.getPic());
+
+               mapList.add(map);
+           }
+           //如果一个方法既要返回数据，也要声明跳转的页面。
+           json = new Gson().toJson(mapList);
+
+           //还有最后一件事情就是： 查询完毕之后，要记得存到redis去以便下次获取
+           ops.set("bigAd" , json);
+
+           System.out.println("mysql查询完毕，并且也存到了redis去");
+
+            /*HashOperations<String, Object, Object> hash = redisTemplate.opsForHash();
+            hash.put("bigAd","1"  ,"第一条数据");
+            hash.put("bigAd","2"  ,"第一条数据");
+            hash.put("bigAd","3"  ,"第一条数据");
+
+            hash.delete("bigAd","1")*/
+
+           return   json;
+        }
 }
