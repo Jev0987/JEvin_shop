@@ -28,6 +28,7 @@ public class ContentServiceImpl implements ContentService{
     @Autowired
     private ContentMapper contentMapper;
 
+    @Autowired
     private RedisTemplate<String , String> redisTemplate;
 
     @Override
@@ -44,7 +45,7 @@ public class ContentServiceImpl implements ContentService{
         //如果使用这种方式，key还是存在的，只是值是空字符串
         //redisTemplate.opsForValue().set("bigAd","");
 
-        //redisTemplate.opsForValue().getOperations().delete("bigAd");
+        redisTemplate.opsForValue().getOperations().delete("bigAd");
         return result;
     }
 
@@ -70,7 +71,7 @@ public class ContentServiceImpl implements ContentService{
         int result = contentMapper.updateByPrimaryKeySelective(content);
 
 
-        //redisTemplate.opsForValue().getOperations().delete("bigAd");
+        redisTemplate.opsForValue().getOperations().delete("bigAd");
 
         return result;
     }
@@ -85,7 +86,7 @@ public class ContentServiceImpl implements ContentService{
             result += contentMapper.deleteByPrimaryKey(Long.parseLong(id));
         }
 
-        //redisTemplate.opsForValue().getOperations().delete("bigAd");
+        redisTemplate.opsForValue().getOperations().delete("bigAd");
 
         return result ;
     }
@@ -101,7 +102,6 @@ public class ContentServiceImpl implements ContentService{
          */
 
        System.out.println("现在要获取大广告位的数据了");
-
        ValueOperations<String, String> ops = redisTemplate.opsForValue();
        String json = ops.get("bigAd");
        //如果json字符串不是空，表示redis里面有数据，直接返回就可以了。
@@ -109,31 +109,31 @@ public class ContentServiceImpl implements ContentService{
            System.out.println("redis里面有数据，直接返回了");
            return json;
        }
-           Content c = new Content();
-            c.setCategoryId(categoryId);
-            //从mysql数据查询出来的集合
-           List<Content> list = contentMapper.select(c);
+       Content c = new Content();
+       c.setCategoryId(categoryId);
+       //从mysql数据查询出来的集合
+       List<Content> list = contentMapper.select(c);
 
 
-           List<Map<String  , String >> mapList = new ArrayList<>();
-           //System.out.println("list=" + list);
-           for (Content content : list) {
+       List<Map<String  , String >> mapList = new ArrayList<>();
+       //System.out.println("list=" + list);
+       for (Content content : list) {
 
-               Map<String  , String > map = new HashMap<String ,String>();
-               map.put("width","670");
-               map.put("height","240");
-               map.put("href",content.getUrl());
-               map.put("src",content.getPic());
+           Map<String  , String > map = new HashMap<String ,String>();
+           map.put("width","670");
+           map.put("height","240");
+           map.put("href",content.getUrl());
+           map.put("src",content.getPic());
 
-               mapList.add(map);
-           }
-           //如果一个方法既要返回数据，也要声明跳转的页面。
-           json = new Gson().toJson(mapList);
+           mapList.add(map);
+       }
+       //如果一个方法既要返回数据，也要声明跳转的页面。
+       json = new Gson().toJson(mapList);
 
-           //还有最后一件事情就是： 查询完毕之后，要记得存到redis去以便下次获取
-           ops.set("bigAd" , json);
+       //还有最后一件事情就是： 查询完毕之后，要记得存到redis去以便下次获取
+       ops.set("bigAd" , json);
 
-           System.out.println("mysql查询完毕，并且也存到了redis去");
+       System.out.println("mysql查询完毕，并且也存到了redis去");
 
             /*HashOperations<String, Object, Object> hash = redisTemplate.opsForHash();
             hash.put("bigAd","1"  ,"第一条数据");
@@ -142,6 +142,6 @@ public class ContentServiceImpl implements ContentService{
 
             hash.delete("bigAd","1")*/
 
-           return   json;
+       return   json;
         }
 }
