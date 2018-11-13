@@ -6,4 +6,7 @@ include 'JEvin-service'
 include 'JEvin-manager'
 include 'JEvin-interface'
 include 'JEvin-portal'
+include 'JEvin-sso-web'
+include 'JEvin-sso-service'
+include 'JEvin-sso-interface'
 

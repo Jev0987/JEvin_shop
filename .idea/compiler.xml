@@ -28,6 +28,12 @@
       <module name="JEvin-service_test" target="1.8" />
       <module name="JEvin-shop_main" target="1.8" />
       <module name="JEvin-shop_test" target="1.8" />
+      <module name="JEvin-sso-interface_main" target="1.8" />
+      <module name="JEvin-sso-interface_test" target="1.8" />
+      <module name="JEvin-sso-service_main" target="1.8" />
+      <module name="JEvin-sso-service_test" target="1.8" />
+      <module name="JEvin-sso-web_main" target="1.8" />
+      <module name="JEvin-sso-web_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

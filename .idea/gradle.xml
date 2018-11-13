@@ -16,6 +16,9 @@
             <option value="$PROJECT_DIR$/JEvin-pojo" />
             <option value="$PROJECT_DIR$/JEvin-portal" />
             <option value="$PROJECT_DIR$/JEvin-service" />
+            <option value="$PROJECT_DIR$/JEvin-sso-interface" />
+            <option value="$PROJECT_DIR$/JEvin-sso-service" />
+            <option value="$PROJECT_DIR$/JEvin-sso-web" />
           </set>
         </option>
       </GradleProjectSettings>
