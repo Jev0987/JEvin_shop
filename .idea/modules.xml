@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-cart-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-cart-interface.iml" group="JEvin-cart-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-cart-interface/JEvin-cart-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-cart-interface/JEvin-cart-interface_main.iml" group="JEvin-cart-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-cart-interface/JEvin-cart-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-cart-interface/JEvin-cart-interface_test.iml" group="JEvin-cart-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-cart-service/JEvin-cart-service.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-cart-service/JEvin-cart-service.iml" group="JEvin-cart-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-cart-service/JEvin-cart-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-cart-service/JEvin-cart-service_main.iml" group="JEvin-cart-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-cart-service/JEvin-cart-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-cart-service/JEvin-cart-service_test.iml" group="JEvin-cart-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common.iml" group="JEvin-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_main.iml" group="JEvin-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-common/JEvin-common_test.iml" group="JEvin-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-interface.iml" group="JEvin-interface" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_main.iml" group="JEvin-interface" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-interface/JEvin-interface_test.iml" group="JEvin-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-item-web.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-item-web.iml" group="JEvin-item-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-item-web/JEvin-item-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-item-web/JEvin-item-web_main.iml" group="JEvin-item-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-item-web/JEvin-item-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-item-web/JEvin-item-web_test.iml" group="JEvin-item-web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-manager.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-manager.iml" group="JEvin-manager" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_main.iml" group="JEvin-manager" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-manager/JEvin-manager_test.iml" group="JEvin-manager" />
@@ -20,6 +29,15 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-portal.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-portal.iml" group="JEvin-portal" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_main.iml" group="JEvin-portal" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-portal/JEvin-portal_test.iml" group="JEvin-portal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-interface/JEvin-search-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-interface/JEvin-search-interface.iml" group="JEvin-search-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-interface/JEvin-search-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-interface/JEvin-search-interface_main.iml" group="JEvin-search-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-interface/JEvin-search-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-interface/JEvin-search-interface_test.iml" group="JEvin-search-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-service.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-service.iml" group="JEvin-search-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-service/JEvin-search-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-service/JEvin-search-service_main.iml" group="JEvin-search-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-service/JEvin-search-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-service/JEvin-search-service_test.iml" group="JEvin-search-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-web.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-web.iml" group="JEvin-search-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-web/JEvin-search-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-web/JEvin-search-web_main.iml" group="JEvin-search-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-search-web/JEvin-search-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-search-web/JEvin-search-web_test.iml" group="JEvin-search-web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service.iml" group="JEvin-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_main.iml" group="JEvin-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JEvin-service/JEvin-service_test.iml" group="JEvin-service" />

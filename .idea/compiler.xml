@@ -12,10 +12,16 @@
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel>
+      <module name="JEvin-cart-interface_main" target="1.8" />
+      <module name="JEvin-cart-interface_test" target="1.8" />
+      <module name="JEvin-cart-service_main" target="1.8" />
+      <module name="JEvin-cart-service_test" target="1.8" />
       <module name="JEvin-common_main" target="1.8" />
       <module name="JEvin-common_test" target="1.8" />
       <module name="JEvin-interface_main" target="1.8" />
       <module name="JEvin-interface_test" target="1.8" />
+      <module name="JEvin-item-web_main" target="1.8" />
+      <module name="JEvin-item-web_test" target="1.8" />
       <module name="JEvin-manager_main" target="1.8" />
       <module name="JEvin-manager_test" target="1.8" />
       <module name="JEvin-mapper_main" target="1.8" />
@@ -24,6 +30,12 @@
       <module name="JEvin-pojo_test" target="1.8" />
       <module name="JEvin-portal_main" target="1.8" />
       <module name="JEvin-portal_test" target="1.8" />
+      <module name="JEvin-search-interface_main" target="1.8" />
+      <module name="JEvin-search-interface_test" target="1.8" />
+      <module name="JEvin-search-service_main" target="1.8" />
+      <module name="JEvin-search-service_test" target="1.8" />
+      <module name="JEvin-search-web_main" target="1.8" />
+      <module name="JEvin-search-web_test" target="1.8" />
       <module name="JEvin-service_main" target="1.8" />
       <module name="JEvin-service_test" target="1.8" />
       <module name="JEvin-shop_main" target="1.8" />

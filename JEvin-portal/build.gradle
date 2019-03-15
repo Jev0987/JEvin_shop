@@ -41,5 +41,11 @@ dependencies {
 
     compile project(':JEvin-interface')
 
+    compile project(':JEvin-sso-interface')
+
+    compile project(':JEvin-cart-interface')
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '1.5.10.RELEASE'
+
 
 }

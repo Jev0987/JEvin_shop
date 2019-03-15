@@ -9,6 +9,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsMessagingTemplate;
 
 import java.util.Date;
 import java.util.List;
@@ -22,13 +23,16 @@ import java.util.List;
  *  @描述：    TODO
  */
 @Service
-public class ItemServiceImpl implements ItemService {
+public  class ItemServiceImpl implements ItemService {
 
     @Autowired
     private ItemMapper itemMapper;
 
     @Autowired
     private ItemDescMapper itemDescMapper;
+
+    @Autowired
+    private JmsMessagingTemplate template;
     /*
    cid: 560
    title: iphonexs
@@ -66,6 +70,11 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setItemId(id);
         itemDescMapper.insert(itemDesc);
 
+
+        //添加完商品，需要发送消息，然后搜索系统去更新索引库
+        template.convertAndSend("item_save",id);
+
+
         return result;
     }
 
@@ -79,4 +88,27 @@ public class ItemServiceImpl implements ItemService {
 
         return new PageInfo<>(list);
     }
+
+    @Override
+    public Item findItemById(long id) {
+        return itemMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int deleteItem(long id) {
+        return itemMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public int updateItem(Item item) {
+        return itemMapper.updateByPrimaryKeySelective(item);
+    }
+
+    /*@Override
+    public Item findItemById(long id) {
+
+        return itemMapper.selectByPrimaryKey(id);
+    }*/
+
+
 }

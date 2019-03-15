@@ -30,6 +30,8 @@ var TTCart = {
 	},
 	refreshTotalPrice : function(){ //重新计算总价
 		var total = 0;
+
+		//第一个是数量，第二个是价格。
 		$(".quantity-form .quantity-text").each(function(i,e){
 			var _this = $(e);
 			total += (eval(_this.attr("itemPrice")) * 10000 * eval(_this.val())) / 10000;

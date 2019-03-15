@@ -45,10 +45,13 @@ public class ItemController {
     @RequestMapping(value = "/rest/item",method = RequestMethod.POST)
     public String add(Item item,String desc){
 
+        System.out.println("desc:" + desc);
         itemService.add(item,desc);
 
         return "success!~!";
     }
+
+
     //商品的图片上传
     @RequestMapping("rest/pic/upload")
     public   Map<String, Object> upload(@RequestParam(value="uploadFile")MultipartFile file) throws Exception{
@@ -78,7 +81,7 @@ public class ItemController {
         Map<String, Object> map = new HashMap<String,Object>();
         map.put("error", 0);
         //map.put("url", "http://192.168.227.131/"+uploadinfos[0]+"/"+uploadinfos[1]); //这里就是图片的路径地址，其实就是ip +返回值
-        map.put("url", "http://image.jvshop.com/"+uploadinfos[0]+"/"+uploadinfos[1]); //这里就是图片的路径地址，其实就是ip +返回值
+        map.put("url", "http://image2.jvshop.com/"+uploadinfos[0]+"/"+uploadinfos[1]); //这里就是图片的路径地址，其实就是ip +返回值
         map.put("height", 100);
         map.put("width", 100);
 

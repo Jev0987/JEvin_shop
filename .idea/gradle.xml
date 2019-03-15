@@ -9,12 +9,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/JEvin-cart-interface" />
+            <option value="$PROJECT_DIR$/JEvin-cart-service" />
             <option value="$PROJECT_DIR$/JEvin-common" />
             <option value="$PROJECT_DIR$/JEvin-interface" />
+            <option value="$PROJECT_DIR$/JEvin-item-web" />
             <option value="$PROJECT_DIR$/JEvin-manager" />
             <option value="$PROJECT_DIR$/JEvin-mapper" />
             <option value="$PROJECT_DIR$/JEvin-pojo" />
             <option value="$PROJECT_DIR$/JEvin-portal" />
+            <option value="$PROJECT_DIR$/JEvin-search-interface" />
+            <option value="$PROJECT_DIR$/JEvin-search-service" />
+            <option value="$PROJECT_DIR$/JEvin-search-web" />
             <option value="$PROJECT_DIR$/JEvin-service" />
             <option value="$PROJECT_DIR$/JEvin-sso-interface" />
             <option value="$PROJECT_DIR$/JEvin-sso-service" />

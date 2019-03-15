@@ -24,4 +24,10 @@ public interface ItemService {
     int add(Item item,String desc);
 
     PageInfo<Item> list(int page,int rows);
+
+    Item findItemById(long id);
+
+    int deleteItem(long id);
+
+    int updateItem(Item item);
 }
